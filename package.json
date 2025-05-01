@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "bs5-lightbox": "^1.8.5",
+    "typed.js": "^2.1.0"
+  }
+}

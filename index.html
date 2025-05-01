@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-fixed w-100">
+    <div class="container">
+      <a class="navbar-brand" href="#">DevFolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Dropdown 1</a></li>
+              <li class="dropstart">
+                <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                  Deep Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Deep Dropdown 1</a></li>
+                  <li><a class="dropdown-item" href="#">Deep Dropdown 2</a></li>
+                  <li><a class="dropdown-item" href="#">Deep Dropdown 3</a></li>
+                  <li><a class="dropdown-item" href="#">Deep Dropdown 4</a></li>
+                  <li><a class="dropdown-item" href="#">Deep Dropdown 5</a></li>                  
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="#">Dropdown 2</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown 3</a></li>
+              <li><a class="dropdown-item" href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <section id="home" class="vh-100 text-white d-flex justify-content-center align-items-center">
+      <div class="text-center">
+        <h1 class="lh-sm mb-4">I am Morgan Freeman</h1>
+        <div class="subtitle lh-base">
+          <span id="element"></span>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about">
+      <div class="container">
+        <div class="row p-5 shadow-lg p-3">
+          <div class="col-lg-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-md-0 g-4">
+                <div class="col-sm-4">
+                  <img src="./images/testimonial-2.jpg" class="img-fluid rounded" alt="testimonial">
+                </div>
+                <div class="col-sm-8">
+                  <div class="card-body">
+                    <p class="card-text"><span class="fw-600 title-color">Name:</span> Morgan Freeman</p>
+                    <p class="card-text"><span class="fw-600 title-color">Profile:</span> full stack developer</p>
+                    <p class="card-text"><span class="fw-600 title-color">Email:</span> contact@example.com</p>
+                    <p class="card-text"><span class="fw-600 title-color">Phone:</span> (617) 557-0089</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="skill">
+              <p class="fw-600 title-color">Skill</p>
+              <div class="skill-items">
+                <p>HTML 85%</p>
+                <div class="progress">
+                  <div class="progress-bar w-85" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div>
+                <p>CSS3 75%</p>
+                <div class="progress">
+                  <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div>
+                <p>PHP 50%</p>
+                <div class="progress">
+                  <div class="progress-bar w-50" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div>
+                <p>JAVASCRIPT 90%</p>
+                <div class="progress">
+                  <div class="progress-bar w-90" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-me col-lg-6 pt-sm-4 pt-lg-0">
+            <h3 class=" secondary-title">About me</h3>
+            <div>
+              <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt.</p>
+              <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.</p>
+              <p>Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <div class="sec-title">
+          <h2>Services</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="cards row gy-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg">
+              <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                  <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+                </svg>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Web Design</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg">
+              <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                  <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                  <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                </svg>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Web Development</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg">
+              <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                  <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+                </svg>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Photography</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg">
+              <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-binoculars" viewBox="0 0 16 16">
+                  <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"/>
+                </svg>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Responsive Design</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg">
+              <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                </svg>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Graphic Design</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg">
+              <div class="icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                  <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+              </div>
+              <div class="card-body text-center">
+                <h5 class="card-title">Marketing Services</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+    </section>
+
+    <section class="counter py-5">
+      <div class="container">
+        <div class="row pb-4">
+          <div class="col-md-6 col-lg-3 pt-4">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+              </svg>
+            </div>
+            <p class="count">450</p>
+            <p>WORKS COMPLETED</p>
+          </div>
+          <div class="col-md-6 col-lg-3 pt-4">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-journal-richtext" viewBox="0 0 16 16">
+                <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+              </svg>
+            </div>
+            <p class="count">25</p>
+            <p>YEARS OF EXPERIENCE</p>
+          </div>
+          <div class="col-md-6 col-lg-3 pt-4">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+              </svg>
+            </div>
+            <p class="count">550</p>
+            <p>TOTAL CLIENTS</p>
+          </div>
+          <div class="col-md-6 col-lg-3 pt-4">
+            <div class="icon-wrapper">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-award" viewBox="0 0 16 16">
+                <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+              </svg>
+            </div>
+            <p class="count">48</p>
+            <p>AWARD WON</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio">
+      <div class="container">
+        <div class="sec-title">
+          <h2>Portfolio</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="row gy-4">
+          <div class="card col-md-6 col-lg-4">
+            <a href="./images/portofolio/work-1.jpg" data-gallery="portofolio-gallery"
+            data-toggle="lightbox" data-size="fullscreen">
+              <div class="img-wrapper w-100">
+                <img class="img-fluid" src="./images/portofolio/work-1.jpg" alt="work-1">
+              </div>
+            </a>
+            <div class="card-body">
+              <div>
+                <h4>Lorem impsum dolor</h4>
+                <p><span class="text-main-color">Web Design</span> / 18 Sep. 2018</p>
+              </div>
+              <a href="https://routeegy.github.io/Devfolio/portfolio-details.html">
+                <i class="bi bi-plus-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-4">
+            <a href="./images/portofolio/work-2.jpg" data-gallery="portofolio-gallery"
+            data-toggle="lightbox" data-size="fullscreen">
+              <div class="img-wrapper w-100">
+                <img class="img-fluid" src="./images/portofolio/work-2.jpg" alt="work-1">
+              </div>
+            </a>
+            <div class="card-body">
+              <div>
+                <h4>Loreda Cuno Nere</h4>
+                <p><span class="text-main-color">Web Design</span> / 18 Sep. 2018</p>
+              </div>
+              <a href="https://routeegy.github.io/Devfolio/portfolio-details.html">
+                <i class="bi bi-plus-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-4">
+            <a href="./images/portofolio/work-3.jpg" data-gallery="portofolio-gallery"
+            data-toggle="lightbox" data-size="fullscreen">
+              <div class="img-wrapper w-100">
+                <img class="img-fluid" src="./images/portofolio/work-3.jpg" alt="work-1">
+              </div>
+            </a>
+            <div class="card-body">
+              <div>
+                <h4>Mavrito Lana Dere</h4>
+                <p><span class="text-main-color">Web Design</span> / 18 Sep. 2018</p>
+              </div>
+              <a href="https://routeegy.github.io/Devfolio/portfolio-details.html">
+                <i class="bi bi-plus-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-4">
+            <a href="./images/portofolio/work-4.jpg" data-gallery="portofolio-gallery"
+            data-toggle="lightbox" data-size="fullscreen">
+              <div class="img-wrapper w-100">
+                <img class="img-fluid" src="./images/portofolio/work-4.jpg" alt="work-1">
+              </div>
+            </a>
+            <div class="card-body">
+              <div>
+                <h4>Bindo Laro Cado</h4>
+                <p><span class="text-main-color">Web Design</span> / 18 Sep. 2018</p>
+              </div>
+              <a href="https://routeegy.github.io/Devfolio/portfolio-details.html">
+                <i class="bi bi-plus-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-4">
+            <a href="./images/portofolio/work-5.jpg" data-gallery="portofolio-gallery"
+            data-toggle="lightbox" data-size="fullscreen">
+              <div class="img-wrapper w-100">
+                <img class="img-fluid" src="./images/portofolio/work-5.jpg" alt="work-1">
+              </div>
+            </a>
+            <div class="card-body">
+              <div>
+                <h4>Studio Lena Mado</h4>
+                <p><span class="text-main-color">Web Design</span> / 18 Sep. 2018</p>
+              </div>
+              <a href="https://routeegy.github.io/Devfolio/portfolio-details.html">
+                <i class="bi bi-plus-circle"></i>
+              </a>
+            </div>
+          </div>
+          <div class="card col-md-6 col-lg-4">
+            <a href="./images/portofolio/work-6.jpg" data-gallery="portofolio-gallery"
+            data-toggle="lightbox" data-size="fullscreen">
+              <div class="img-wrapper w-100">
+                <img class="img-fluid" src="./images/portofolio/work-6.jpg" alt="work-1">
+              </div>
+            </a>
+            <div class="card-body">
+              <div>
+                <h4>Studio Big Bang</h4>
+                <p><span class="text-main-color">Web Design</span> / 18 Sep. 2018</p>
+              </div>
+              <a href="https://routeegy.github.io/Devfolio/portfolio-details.html">
+                <i class="bi bi-plus-circle"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider bg-img">
+      <div class="container py">
+        <div id="carouselExampleCaptions" class="carousel slide py-4 my-5">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/testimonial-2.jpg" class="d-block rounded-circle mx-auto" alt="testimonial">
+              <div class="carousel-caption">
+                <h6>Xavi Alonso</h6>
+                <p class="lead py-2">
+                  Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+            <img src="./images/testimonial-4.jpeg" class="d-block rounded-circle mx-auto" alt="testimonial">
+            <div class="carousel-caption">
+              <h6>Marta Socrate</h6>
+              <p class="lead py-2">
+                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog">
+      <div class="container">
+        <div class="sec-title">
+          <h2>Blog</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <a href="https://routeegy.github.io/Devfolio/blog-single.html">
+                <img src="./images/post-1.jpg" class="card-img-top" alt="post">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">See more ideas about Travel</h5>
+                <p class="card-text">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                <span class="badge">Travel</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <div>
+                    <a href="#">
+                      <img class="rounded-circle" src="./images/testimonial-2.jpg" alt="testimonial">
+                      <span class="title-color">Morgan Freeman</span>
+                    </a>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock"></i>
+                    <span>10 min</span>
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="https://routeegy.github.io/Devfolio/blog-single.html">
+                <img src="./images/post-2.jpg" class="card-img-top" alt="post">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">See more ideas about Travel</h5>
+                <p class="card-text">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                <span class="badge">Web Design</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <div>
+                    <a href="#">
+                      <img class="rounded-circle" src="./images/testimonial-2.jpg" alt="testimonial">
+                      <span class="title-color">Morgan Freeman</span>
+                    </a>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock"></i>
+                    <span>10 min</span>
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <a href="https://routeegy.github.io/Devfolio/blog-single.html">
+                <img src="./images/post-3.jpg" class="card-img-top" alt="post">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">See more ideas about Travel</h5>
+                <p class="card-text">Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                <span class="badge">Web Design</span>
+              </div>
+              <div class="card-footer">
+                <small class="text-body-secondary">
+                  <div>
+                    <a href="#">
+                      <img class="rounded-circle" src="./images/testimonial-2.jpg" alt="testimonial">
+                      <span class="title-color">Morgan Freeman</span>
+                    </a>
+                  </div>
+                  <div>
+                    <i class="bi bi-clock"></i>
+                    <span>10 min</span>
+                  </div>
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-img pt-5">
+      <div class="container">
+        <div class="row bg-white p-5">
+          <div class="col-lg-6">
+            <h3 class="secondary-title">Send Message Us</h3>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Subject" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="3" placeholder="Message" required></textarea>
+              </div>
+              <div class="buttons-wrapper">
+                <button class="btn btn-primary rounded-pill">Send Message</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 pt-sm-4 pt-lg-0">
+            <h3 class="secondary-title">Get in Touch</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?</p>
+            <ul class="contact-info list-unstyled lh-lg m-0">
+              <li>
+                <i class="bi bi-geo-alt"></i>
+                <span>329 WASHINGTON ST BOSTON, MA 02108</span>
+              </li>
+              <li>
+                <i class="bi bi-phone"></i>
+                <span>(617) 557-0089</span>
+              </li>
+              <li>
+                <i class="bi bi-envelope"></i>
+                <span>contact@example.com</span>
+              </li>
+            </ul>
+            <ul class="social-icons list-unstyled list-group list-group-horizontal gap-3 py-4">
+              <li>
+                <a href="https://www.facebook.com/" class="icon-wrapper" target="_blank">
+                  <i class="bi bi-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/" class="icon-wrapper" target="_blank">
+                  <i class="bi bi-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.twitter.com/" class="icon-wrapper" target="_blank">
+                  <i class="bi bi-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" class="icon-wrapper" target="_blank">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container py-4 text-center lh-base">
+      <p class="mb-1">© Copyright <span class="fw-bold">DevFolio</span>. All Rights Reserved</p>
+      <p class="m-0">Designed by BootstrapMade</p>
+    </div>
+  </footer>
+
+  <a href="#" class="arrow-up flex-center rounded-circle bg-main-color text-white">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./node_modules/typed.js/dist/typed.umd.js"></script>
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Designer', 'Developer', 'Freelancer', 'Photographer'],
+      typeSpeed: 60,
+      backSpeed: 60,
+      loop: true,
+      smartBackspace: false
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+</body>
+</html>
